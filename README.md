@@ -64,13 +64,17 @@ To successfully protect against timing attack vulnerabilities, the algorithm mus
 Depending on your environment, there is likely a function you can use for making safe comparisons. Here are some constant time string comparison functions for differents languages : 
 </br> ➤ Ruby : `secure_compare`
 </br> ➤ Rust : `constant_time_eq`
-</br> ➤ Java : `none ; code it yourself`
 </br> ➤ Python (Django) : `constant_time_compare`
+
+The Java, C# and C languages do not seem to implement a secure string comparison function. #CodeItYourself
 
 * ## Sources
 https://ropesec.com/articles/timing-attacks/
-</br>https://blog.sqreen.com/developer-security-best-practices-protecting-against-timing-attacks/
-</br>https://developer.classpath.org/doc/java/lang/String-source.html
-</br>https://apidock.com/rails/ActiveSupport/MessageVerifier/secure_compare
-</br>https://lib.rs/crates/constant_time_eq
-</br>https://github.com/django/django/blob/main/django/utils/crypto.py
+</br> https://blog.sqreen.com/developer-security-best-practices-protecting-against-timing-attacks/
+</br> https://developer.classpath.org/doc/java/lang/String-source.html
+</br> https://apidock.com/rails/ActiveSupport/MessageVerifier/secure_compare
+</br> https://lib.rs/crates/constant_time_eq
+</br> https://github.com/django/django/blob/main/django/utils/crypto.py
+</br> https://www.cs.rice.edu/~dwallach/pub/crosby-timing2009.pdf 
+</br> https://crypto.stanford.edu/~dabo/papers/ssl-timing.pdf
+</br> https://crypto.stanford.edu/~dabo/papers/webtiming.pdf
