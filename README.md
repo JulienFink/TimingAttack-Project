@@ -7,8 +7,8 @@ A timing attack is a rather sophisticated way to circumvent the security mechani
 
 The only information needed by the attacker is the timing information that is revealed by the algorithms of the application. By supplying various inputs to the application, timing the processing and statistically analyzing this information, the attacker can guess valid inputs.
 
-➤ For hardware applications, timing attacks require high quality equipments since the timing differences to guess a key, a password, etc. will be in the nanosecond/microsecond range.
-</br> ➤ For network applications, timing attacks can go up to milliseconds differences.
+➤ For hardware applications, timing attacks require high quality equipments since the timing differences to guess a key, a password, etc. will be in the nanoseconds/microseconds range.
+</br> ➤ For network applications, timing attacks will be in the milliseconds range.
 
 * ## Example of vulnerable code
 The following java code is vulnerable to a timing attack :
